@@ -31,6 +31,8 @@ public class crudController {
     public List<Employee> read(){
         return employeeList;
     }
+
+
     //update
     @RequestMapping("/uapdatecrud")
     public String update()
