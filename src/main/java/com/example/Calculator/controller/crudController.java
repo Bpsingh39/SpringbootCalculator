@@ -34,7 +34,7 @@ public class crudController {
 
 
     //update
-    @RequestMapping("/uapdatecrud")
+    @RequestMapping("/updatecrud")
     public String update()
     {
         employeeList.get(0).setName("sohan");

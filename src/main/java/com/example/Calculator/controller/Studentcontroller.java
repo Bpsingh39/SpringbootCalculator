@@ -2,6 +2,7 @@ package com.example.Calculator.controller;
 
 import com.example.Calculator.model.Studentcrud;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -27,8 +28,8 @@ public class Studentcontroller {
     }
     //update
     @RequestMapping("/update_std")
-    public String updatestd(){
-        studentcrudList.get(0).setName("Chetan");
+    public String updatestd(@RequestParam String name){
+        studentcrudList.get(0).setName(name);
         return "updated";
     }
     //delet
